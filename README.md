@@ -14,3 +14,5 @@ This option is useful when creating temporary containers or using Docker contain
 4. The `-p 80:5000` option enables port forwarding between the Docker container and the host. This option allows an application running in a Docker container to forward requests to a specific port to a specific port of the host.
 In this example, using the `-p 80:5000` option specifies that requests to port 5000 of an application running in a Docker container will be forwarded to port 80 of the host.
 5. The `ysufemrlty/case3` we ​​type at the end of the commands is the name of our docker image.
+
+### Screenshot while container is running   
