@@ -15,4 +15,5 @@ This option is useful when creating temporary containers or using Docker contain
 In this example, using the `-p 80:5000` option specifies that requests to port 5000 of an application running in a Docker container will be forwarded to port 80 of the host.
 5. The `ysufemrlty/case3` we ​​type at the end of the commands is the name of our docker image.
 
-### Screenshot while container is running   
+### Screenshot while container is running  
+![ubuntu docker](https://github.com/YusufEmirAltay/api_flask_case/assets/119528791/c6f595d5-357a-4a1c-9c56-24858780083e)
