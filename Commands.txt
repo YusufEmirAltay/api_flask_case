@@ -1,0 +1,36 @@
+Dockerfile Commands
+
+FROM python:3.11-alpine
+I used "python:3.11-alpine" because the application was developed in python and I wanted to keep the image size small.
+
+WORKDIR /app
+I set the working directory to "/app."
+
+COPY . .
+Adds all files and directories in the directory where the Dockerfile file is located inside the Docker image.
+
+RUN pip install -r requirements.txt
+While creating the Docker Image, I used the "pip" command to install the packages in the "requirements.txt" file that contains the project's requirements.
+
+EXPOSE 5000
+Since the port of the python application is 5000, I made the port 5000 of the Docker image accessible to the outside world by using the expose command.
+
+CMD python ./app.py 
+The "CMD python ./app.py" command makes the Python script "app.py" run inside the container when the Docker image is started.
+
+Git Commands
+
+git init
+I came to the project folder and converted the directory into a git project with the "git init" command.
+
+git add.
+I added the files in the directory to the staging area with the "git add." command.
+
+git commit -m "api_flask_case"
+I save the Dockerfile that I added with the "git add" command to the git repository. I am adding the "api_flask_case" message to the changes made with the -m parameter.
+
+git remote add githubrepo https://github.com/YusufEmirAltay/api_flask_case.git 
+I used this command to add a specified remote repository to a Git repository, thereby establishing a connection between the local Git repository and the remote Git repository.
+
+git push -u githubrepo master
+I pushed my changes from Git Repository to Repository on GitHub
